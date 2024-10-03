@@ -1,0 +1,316 @@
+<?php
+
+use Twig\Environment;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Extension\SandboxExtension;
+use Twig\Markup;
+use Twig\Sandbox\SecurityError;
+use Twig\Sandbox\SecurityNotAllowedTagError;
+use Twig\Sandbox\SecurityNotAllowedFilterError;
+use Twig\Sandbox\SecurityNotAllowedFunctionError;
+use Twig\Source;
+use Twig\Template;
+
+/* catalog/view/template/common/header.twig */
+class __TwigTemplate_bce84a32ae95c8e3e0cbdd37d29e13cd extends Template
+{
+    private $source;
+    private $macros = [];
+
+    public function __construct(Environment $env)
+    {
+        parent::__construct($env);
+
+        $this->source = $this->getSourceContext();
+
+        $this->parent = false;
+
+        $this->blocks = [
+        ];
+    }
+
+    protected function doDisplay(array $context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        // line 1
+        echo "<!DOCTYPE html>
+<html dir=\"";
+        // line 2
+        echo ($context["direction"] ?? null);
+        echo "\" lang=\"";
+        echo ($context["lang"] ?? null);
+        echo "\">
+<head>
+  <meta charset=\"UTF-8\"/>
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
+  <title>";
+        // line 7
+        echo ($context["title"] ?? null);
+        echo "</title>
+  <base href=\"";
+        // line 8
+        echo ($context["base"] ?? null);
+        echo "\"/>
+  ";
+        // line 9
+        if (($context["description"] ?? null)) {
+            // line 10
+            echo "    <meta name=\"description\" content=\"";
+            echo ($context["description"] ?? null);
+            echo "\"/>
+  ";
+        }
+        // line 12
+        echo "  ";
+        if (($context["keywords"] ?? null)) {
+            // line 13
+            echo "    <meta name=\"keywords\" content=\"";
+            echo ($context["keywords"] ?? null);
+            echo "\"/>
+  ";
+        }
+        // line 15
+        echo "  <script src=\"";
+        echo ($context["jquery"] ?? null);
+        echo "\" type=\"text/javascript\"></script>
+  <link href=\"";
+        // line 16
+        echo ($context["bootstrap"] ?? null);
+        echo "\" type=\"text/css\" rel=\"stylesheet\" media=\"screen\"/>
+  <link href=\"";
+        // line 17
+        echo ($context["icons"] ?? null);
+        echo "\" type=\"text/css\" rel=\"stylesheet\"/>
+  <link href=\"";
+        // line 18
+        echo ($context["stylesheet"] ?? null);
+        echo "\" type=\"text/css\" rel=\"stylesheet\"/>
+  <script type=\"text/javascript\" src=\"catalog/view/javascript/jquery/datetimepicker/moment.min.js\"></script>
+  <script type=\"text/javascript\" src=\"catalog/view/javascript/jquery/datetimepicker/moment-with-locales.min.js\"></script>
+  <script type=\"text/javascript\" src=\"catalog/view/javascript/jquery/datetimepicker/daterangepicker.js\"></script>
+  <link href=\"catalog/view/javascript/jquery/datetimepicker/daterangepicker.css\" rel=\"stylesheet\" type=\"text/css\"/>
+  <script src=\"catalog/view/javascript/common.js\" type=\"text/javascript\"></script>
+  ";
+        // line 24
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["styles"] ?? null));
+        foreach ($context['_seq'] as $context["_key"] => $context["style"]) {
+            // line 25
+            echo "    <link href=\"";
+            echo twig_get_attribute($this->env, $this->source, $context["style"], "href", [], "any", false, false, false, 25);
+            echo "\" type=\"text/css\" rel=\"";
+            echo twig_get_attribute($this->env, $this->source, $context["style"], "rel", [], "any", false, false, false, 25);
+            echo "\" media=\"";
+            echo twig_get_attribute($this->env, $this->source, $context["style"], "media", [], "any", false, false, false, 25);
+            echo "\"/>
+  ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['style'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 27
+        echo "  ";
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["scripts"] ?? null));
+        foreach ($context['_seq'] as $context["_key"] => $context["script"]) {
+            // line 28
+            echo "    <script src=\"";
+            echo twig_get_attribute($this->env, $this->source, $context["script"], "href", [], "any", false, false, false, 28);
+            echo "\" type=\"text/javascript\"></script>
+  ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['script'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 30
+        echo "  ";
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["links"] ?? null));
+        foreach ($context['_seq'] as $context["_key"] => $context["link"]) {
+            // line 31
+            echo "    <link href=\"";
+            echo twig_get_attribute($this->env, $this->source, $context["link"], "href", [], "any", false, false, false, 31);
+            echo "\" rel=\"";
+            echo twig_get_attribute($this->env, $this->source, $context["link"], "rel", [], "any", false, false, false, 31);
+            echo "\"/>
+  ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['link'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 33
+        echo "  ";
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["analytics"] ?? null));
+        foreach ($context['_seq'] as $context["_key"] => $context["analytic"]) {
+            // line 34
+            echo "    ";
+            echo $context["analytic"];
+            echo "
+  ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['analytic'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 36
+        echo "</head>
+<body>
+  <div class=\"card shadow\">
+<div id=\"alert\" class=\"toast-container position-fixed top-0 end-0 p-3\"></div>
+<nav id=\"top\">
+  <div class=\"container\">
+    <div class=\"nav float-start\">
+      <ul class=\"list-inline\">
+        <li class=\"list-inline-item\">";
+        // line 44
+        echo ($context["currency"] ?? null);
+        echo "</li>
+        <li class=\"list-inline-item\">";
+        // line 45
+        echo ($context["language"] ?? null);
+        echo "</li>
+      </ul>
+    </div>
+    <div class=\"nav float-end\">
+      <ul class=\"list-inline\">
+        <li class=\"list-inline-item\"><a href=\"";
+        // line 50
+        echo ($context["contact"] ?? null);
+        echo "\"><i class=\"fa-solid fa-phone\"></i></a> <span class=\"d-none d-md-inline\">";
+        echo ($context["telephone"] ?? null);
+        echo "</span></li>
+        <li class=\"list-inline-item\">
+          <div class=\"dropdown\">
+            <a href=\"";
+        // line 53
+        echo ($context["account"] ?? null);
+        echo "\" class=\"dropdown-toggle\" data-bs-toggle=\"dropdown\"><i class=\"fa-solid fa-user\"></i> <span class=\"d-none d-md-inline\">";
+        echo ($context["text_account"] ?? null);
+        echo "</span> <i class=\"fa-solid fa-caret-down\"></i></a>
+            <ul class=\"dropdown-menu dropdown-menu-right\">
+              ";
+        // line 55
+        if ( !($context["logged"] ?? null)) {
+            // line 56
+            echo "                <li><a href=\"";
+            echo ($context["register"] ?? null);
+            echo "\" class=\"dropdown-item\">";
+            echo ($context["text_register"] ?? null);
+            echo "</a></li>
+                <li><a href=\"";
+            // line 57
+            echo ($context["login"] ?? null);
+            echo "\" class=\"dropdown-item\">";
+            echo ($context["text_login"] ?? null);
+            echo "</a></li>
+              ";
+        } else {
+            // line 59
+            echo "                <li><a href=\"";
+            echo ($context["account"] ?? null);
+            echo "\" class=\"dropdown-item\">";
+            echo ($context["text_account"] ?? null);
+            echo "</a></li>
+                <li><a href=\"";
+            // line 60
+            echo ($context["order"] ?? null);
+            echo "\" class=\"dropdown-item\">";
+            echo ($context["text_order"] ?? null);
+            echo "</a></li>
+                <li><a href=\"";
+            // line 61
+            echo ($context["transaction"] ?? null);
+            echo "\" class=\"dropdown-item\">";
+            echo ($context["text_transaction"] ?? null);
+            echo "</a></li>
+                <li><a href=\"";
+            // line 62
+            echo ($context["download"] ?? null);
+            echo "\" class=\"dropdown-item\">";
+            echo ($context["text_download"] ?? null);
+            echo "</a></li>
+                <li><a href=\"";
+            // line 63
+            echo ($context["logout"] ?? null);
+            echo "\" class=\"dropdown-item\">";
+            echo ($context["text_logout"] ?? null);
+            echo "</a></li>
+              ";
+        }
+        // line 65
+        echo "            </ul>
+          </div>
+        </li>
+        <li class=\"list-inline-item\"><a href=\"";
+        // line 68
+        echo ($context["wishlist"] ?? null);
+        echo "\" id=\"wishlist-total\" title=\"";
+        echo ($context["text_wishlist"] ?? null);
+        echo "\"><i class=\"fa-solid fa-heart\"></i> <span class=\"d-none d-md-inline\">";
+        echo ($context["text_wishlist"] ?? null);
+        echo "</span></a></li>
+        <li class=\"list-inline-item\"><a href=\"";
+        // line 69
+        echo ($context["shopping_cart"] ?? null);
+        echo "\" title=\"";
+        echo ($context["text_shopping_cart"] ?? null);
+        echo "\"><i class=\"fa-solid fa-cart-shopping\"></i> <span class=\"d-none d-md-inline\">";
+        echo ($context["text_shopping_cart"] ?? null);
+        echo "</span></a></li>
+        <li class=\"list-inline-item\"><a href=\"";
+        // line 70
+        echo ($context["checkout"] ?? null);
+        echo "\" title=\"";
+        echo ($context["text_checkout"] ?? null);
+        echo "\"><i class=\"fa-solid fa-share\"></i> <span class=\"d-none d-md-inline\">";
+        echo ($context["text_checkout"] ?? null);
+        echo "</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header>
+  <div class=\"container\">
+    <blockquote class=\"blockquote text-center\">
+      <div class=\"row justify-content-center\">
+        <div class=\"col-md-12\">
+          ";
+        // line 80
+        echo ($context["search"] ?? null);
+        echo "
+        </div>
+      </div>
+    </blockquote>
+  </div>
+</header>
+
+<main>
+  ";
+        // line 88
+        echo ($context["menu"] ?? null);
+        echo "
+  </div>";
+    }
+
+    public function getTemplateName()
+    {
+        return "catalog/view/template/common/header.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  292 => 88,  281 => 80,  264 => 70,  256 => 69,  248 => 68,  243 => 65,  236 => 63,  230 => 62,  224 => 61,  218 => 60,  211 => 59,  204 => 57,  197 => 56,  195 => 55,  188 => 53,  180 => 50,  172 => 45,  168 => 44,  158 => 36,  149 => 34,  144 => 33,  133 => 31,  128 => 30,  119 => 28,  114 => 27,  101 => 25,  97 => 24,  88 => 18,  84 => 17,  80 => 16,  75 => 15,  69 => 13,  66 => 12,  60 => 10,  58 => 9,  54 => 8,  50 => 7,  40 => 2,  37 => 1,);
+    }
+
+    public function getSourceContext()
+    {
+        return new Source("", "catalog/view/template/common/header.twig", "");
+    }
+}
